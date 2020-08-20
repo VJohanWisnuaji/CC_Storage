@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/title2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_pemain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_komputer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <TextView
+        android:id="@+id/tv_pemain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_sans"
+        android:text="Pemain 1"
+        android:textColor="@color/biruMuda"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_pemain"
+        app:layout_constraintStart_toStartOf="@id/guideline_pemain"
+        app:layout_constraintTop_toTopOf="@id/guideline_text" />
+
+    <TextView
+        android:id="@+id/tv_pemain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_sans"
+        android:text="Pemain 2"
+        android:textColor="@color/biruMuda"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_komputer"
+        app:layout_constraintStart_toStartOf="@id/guideline_komputer"
+        app:layout_constraintTop_toTopOf="@id/guideline_text" />
+
+    <ImageView
+        android:id="@+id/iv_p_center"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/vs"
+        app:layout_constraintBottom_toBottomOf="@id/iv_p_gunting_pemain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_pemain"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/iv_p_batu_pemain"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_batu"
+        app:layout_constraintEnd_toEndOf="@id/guideline_pemain"
+        app:layout_constraintStart_toStartOf="@id/guideline_pemain"
+        app:layout_constraintTop_toBottomOf="@id/tv_pemain"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/iv_p_kertas_pemain"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_kertas"
+        app:layout_constraintEnd_toEndOf="@id/guideline_pemain"
+        app:layout_constraintStart_toStartOf="@id/guideline_pemain"
+        app:layout_constraintTop_toBottomOf="@id/iv_p_batu_pemain"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/iv_p_gunting_pemain"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_gunting"
+        app:layout_constraintEnd_toEndOf="@id/guideline_pemain"
+        app:layout_constraintStart_toStartOf="@id/guideline_pemain"
+        app:layout_constraintTop_toBottomOf="@id/iv_p_kertas_pemain"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/iv_p_batu_pemain2"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:scaleX="-1"
+        android:src="@drawable/ic_batu"
+        app:layout_constraintEnd_toEndOf="@id/guideline_komputer"
+        app:layout_constraintStart_toStartOf="@id/guideline_komputer"
+        app:layout_constraintTop_toBottomOf="@id/tv_pemain"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/iv_p_kertas_pemain2"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:scaleX="-1"
+        android:src="@drawable/ic_kertas"
+        app:layout_constraintEnd_toEndOf="@id/guideline_komputer"
+        app:layout_constraintStart_toStartOf="@id/guideline_komputer"
+        app:layout_constraintTop_toBottomOf="@id/iv_p_batu_pemain2"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/iv_p_gunting_pemain2"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="32dp"
+        android:scaleX="-1"
+        android:src="@drawable/ic_gunting"
+        app:layout_constraintEnd_toEndOf="@id/guideline_komputer"
+        app:layout_constraintStart_toStartOf="@id/guideline_komputer"
+        app:layout_constraintTop_toBottomOf="@id/iv_p_kertas_pemain2"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/iv_p_refresh"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_komputer"
+        app:layout_constraintStart_toStartOf="@id/guideline_komputer"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/iv_p_home"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_pemain"
+        app:layout_constraintStart_toStartOf="@id/guideline_pemain"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/iv_p_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_komputer"
+        app:layout_constraintStart_toStartOf="@id/guideline_komputer"
+        android:contentDescription="TODO" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

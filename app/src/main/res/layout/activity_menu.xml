@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    android:background="@color/colorAccent">
+
+    <TextView
+        app:layout_constraintBottom_toTopOf="@id/iv_menu_pemain"
+        android:layout_width="256dp"
+        android:text="PILIH LAWANMU"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/comic_sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35"/>
+
+    <ImageView
+        android:id="@+id/iv_menu_pemain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/gl_menu"
+        android:src="@drawable/ic_landing_page1"
+        app:layout_constraintBottom_toBottomOf="@id/gl_menu"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/tv_vs_pemain"
+        app:layout_constraintTop_toBottomOf="@id/iv_menu_pemain"
+        android:layout_width="256dp"
+        android:layout_marginTop="8dp"
+        android:text="Pemain VS Pemain"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:fontFamily="@font/comic_sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_menu_komputer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_landing_page2"
+        app:layout_constraintTop_toBottomOf="@id/tv_vs_pemain"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/tv_vs_komputer"
+        app:layout_constraintTop_toBottomOf="@id/iv_menu_komputer"
+        android:layout_width="256dp"
+        android:layout_marginTop="8dp"
+        android:text="Pemain VS CPU"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:fontFamily="@font/comic_sans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        android:contentDescription="TODO" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

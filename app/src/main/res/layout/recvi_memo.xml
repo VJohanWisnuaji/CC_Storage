@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_memo"
+    android:id="@+id/ll_memo"
+    android:layout_margin="4dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/comic_sans"
+        android:gravity="start"
+        android:text="Tanggal"
+        android:textColor="@color/biruMuda"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_memo_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/comic_sans"
+        android:gravity="start"
+        android:hint="Tanggal"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/comic_sans"
+        android:gravity="start"
+        android:text="Isi Memo"
+        android:textColor="@color/biruMuda"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_memo_isi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/comic_sans"
+        android:gravity="start"
+        android:hint="Isi Memo"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

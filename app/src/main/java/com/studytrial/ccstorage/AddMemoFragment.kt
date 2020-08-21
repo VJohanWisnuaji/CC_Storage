@@ -53,9 +53,7 @@ class AddMemoFragment : DialogFragment() {
             db = it
         }
 
-//        val myDate = (et_add_tanggal.text.toString())
-//        val calendar = Calendar.getInstance()
-//        calendar.time = myDate
+
         tv_tambah.setOnClickListener {
             val memo = Memo(
                 id = null,
@@ -66,8 +64,8 @@ class AddMemoFragment : DialogFragment() {
             GlobalScope.launch {
                 val memoAdded = db.memoDao().addMemo(memo)
             }
-            dismiss()
             (activity as ProfileActivity).fetchData()
+            dismiss()
         }
 
         tv_cancel.setOnClickListener {

@@ -60,11 +60,12 @@ class EditMemoFragment : DialogFragment() {
         }
 
         tv_update_edit.setOnClickListener {
-            val df = SimpleDateFormat("dd-MM-yyyy", Locale.KOREA)
-            val myDate = df.parse(et_edit_tanggal.text.toString())
+//            val df = SimpleDateFormat("dd-MM-yyyy", Locale.US)
+//            val myDate = df.parse(et_edit_tanggal.text.toString())
             listMemo.apply {
                 isimemo = et_edit_memo.text.toString()
-                tanggal = myDate.toString()
+//                tanggal = myDate.toString()
+                tanggal = et_edit_tanggal.text.toString()
             }
 
             GlobalScope.launch {

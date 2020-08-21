@@ -141,8 +141,6 @@ class GamePemain : AppCompatActivity() {
         }
 
 
-       
-
         binding.ivPRefresh.setOnClickListener {
             binding.ivPBatuPemain.isClickable = true
             binding.ivPKertasPemain.isClickable = true

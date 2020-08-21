@@ -10,7 +10,7 @@ class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
-
+        this.supportActionBar?.hide()
         val sharedPreferences = getSharedPreferences(Login.FIELD_USERNAME, Context.MODE_PRIVATE)
         val usernameInSP = sharedPreferences.getString(Login.FIELD_USERNAME, null)
 

@@ -14,7 +14,7 @@ class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
-
+        this.supportActionBar?.hide()
         MemoDatabase.getInstance(this)?.let {
             db = it
         }

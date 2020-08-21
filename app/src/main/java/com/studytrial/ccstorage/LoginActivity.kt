@@ -16,13 +16,13 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         this.supportActionBar?.hide()
         val sharedPreferences = getSharedPreferences(Login.FIELD_USERNAME, Context.MODE_PRIVATE)
-        val contains = sharedPreferences.contains(Login.FIELD_LOGIN)
+        val contains = sharedPreferences.getBoolean(Login.FIELD_LOGIN, false)
         usernameInSP = sharedPreferences.getString(Login.FIELD_USERNAME, "sabrina")
         passwordInSP = sharedPreferences.getString(Login.FIELD_PASSWORD, "binar123")
 
         if (contains) {
-            et_login_username.setHint(usernameInSP)
-            et_login_password.setHint(passwordInSP)
+            et_login_username.setText(usernameInSP)
+            et_login_password.setText(passwordInSP)
         }
 
         btn_login.setOnClickListener {
@@ -49,6 +49,8 @@ class LoginActivity : AppCompatActivity() {
             editor.putString(Login.FIELD_PASSWORD, "binar123")
             editor.putBoolean(Login.FIELD_LOGIN, false)
             editor.apply()
+            et_login_username.setText(null)
+            et_login_password.setText(null)
             recreate()
         }
     }

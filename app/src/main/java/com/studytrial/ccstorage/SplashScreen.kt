@@ -21,7 +21,7 @@ class SplashScreen : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             val contains = sharedPreferences.contains(Login.FIELD_LOGIN)
             if (contains){
-                tv_splash.setText(nameSplash)
+                tv_splash.text = nameSplash
             }
             startActivity(Intent(this, LandingPage::class.java))
             finish()

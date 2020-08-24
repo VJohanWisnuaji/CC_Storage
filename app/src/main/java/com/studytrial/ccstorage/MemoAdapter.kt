@@ -20,8 +20,8 @@ class MemoAdapter(val listMemo: List<Memo>) : RecyclerView.Adapter<MemoAdapter.V
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemView.tv_memo_isi.setText(listMemo[position].isimemo)
-        holder.itemView.tv_memo_tanggal.setText(listMemo[position].tanggal.toString())
+        holder.itemView.tv_memo_isi.text = listMemo[position].isimemo
+        holder.itemView.tv_memo_tanggal.text = listMemo[position].tanggal.toString()
         holder.itemView.ll_memo.setOnClickListener {
             (it.context as ProfileActivity).editMemo(listMemo[position].tanggal, listMemo[position].isimemo, listMemo[position])
         }
